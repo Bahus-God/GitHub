@@ -105,7 +105,9 @@ footer .logo{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 1300px;
+    height: 1200px;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 .containerReg img{
@@ -241,6 +243,18 @@ span:after{
     box-shadow: inset 0 0 0 1px #878787;
     margin-bottom: 20px;
     width: 120px;
+}
+
+@media (max-width: 767px) {
+    .RegCont input{
+        width: 300px;
+    }
+    .rowDate{
+        width: 300px;
+    }
+    .rowDate input{
+        width: 80px;
+    }
 }
 
 .radioButton{
