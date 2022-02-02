@@ -10,6 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 0 auto;
 }
 
 .nav a{
@@ -19,7 +20,9 @@
     color: white;
 }
 
-
+.nav a:hover{
+    color: #1ed760;
+}
 
 .logo{
     max-height: 80px;
@@ -29,6 +32,7 @@
 .container{
     height: 900px;
     padding: 0 20%;
+    margin: 0 auto;
 }
 
 .bg1{
@@ -85,6 +89,7 @@
     display: flex;
     align-items: center;
     justify-content: start;
+    margin: 0 auto;
 }
 
 footer .logo{
@@ -97,6 +102,104 @@ footer .logo{
     display: inline-block;
     color: white;
     font-size: 12px;
+}
+
+@media (max-width: 1200px) {
+    .bg1 h1{
+        font-size: 130px;
+    }
+    .bg1 h2{
+        font-size: 14px;
+    }
+    .container bg1{
+        height: 700px;
+    }
+    .nav a{
+        font-size: 13px;
+    }
+    .foot ul{
+        font-size: 10px;
+    }
+    footer .logo{
+        max-height: 100px;
+    }
+}
+
+@media (max-width: 992px) {
+    .bg1 h1{
+        font-size: 120px;
+    }
+    .bg1 h2{
+        font-size: 12px;
+    }
+    .container bg1{
+        height: 400px;
+    }
+    .btn{
+        height: 40px;
+        width: 240px;
+        font-size: 11px;
+    }
+    .nav a{
+        font-size: 11px;
+    }
+    .logo{
+        max-height: 60px;
+    }
+    .foot ul{
+        font-size: 8px;
+    }
+    footer .logo{
+        max-height: 90px;
+    }
+}
+
+@media (max-width: 767px) {
+    .bg1 h1{
+        font-size: 50px;
+        max-width: 300px;
+    }
+    .bg1 h2{
+        text-align: center;
+        font-size: 12px;
+    }
+    .bg1{
+        justify-content: space-evenly;
+    }
+    .container bg1{
+        height: 130px;
+    }
+    .nav a{
+        width: 100%;
+        text-align: center;
+        font-size: 15px;
+        padding: 15px 0;
+    }
+    .toggle-button {
+        position: absolute;
+        top: 1.40rem;
+        right: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 28px;
+        height: 21px;
+    }
+    .toggle-button .bar{
+        height: 2px;
+        width: 100%;
+        background: white;
+        border-radius: 10px;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .nav{
+        display: none;
+    }
+    .nav.active{
+        display: inline-block;
+    }
 }
 
 /*Sign Up*/
@@ -159,7 +262,7 @@ footer .logo{
     transform: scale(1.04);
 }
 
-span{
+.sp{
     display: table;
     font-size: 16px;
     line-height: 24px;
@@ -171,7 +274,7 @@ span{
     width: 25%;
 }
 
-span:before{
+.sp:before{
     border-top: 1px solid rgb(204, 204, 204);
     content: "";
     display: table-cell;
@@ -180,7 +283,7 @@ span:before{
     width: 42%;
 }
 
-span:after{
+.sp:after{
     border-top: 1px solid rgb(204, 204, 204);
     content: "";
     display: table-cell;
