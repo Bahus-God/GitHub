@@ -12,137 +12,218 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
     <!--  Links end  -->
 </head>
 <body>
 <!-- Navbar start -->
-    <header class = "navbar">
-        <a href="index.html"><img class="logo" src="img/ffc5b3fb4f43d900f4113fe10cfa678a.jpg"></a>
-        <div class = "nav">
-            <a href="#">Premium</a>
-            <a href="#">Справка</a>
-            <a href="#">Скачать</a>
-            <a href="#">Зарегистрироваться</a>
-            <a href="#">Вход в аккаунт</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container-fluid">
+            <a href="index.html"><img class="logo" src="img/ffc5b3fb4f43d900f4113fe10cfa678a.jpg"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Premium.html">Premium</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Справка</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Скачать</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Зарегистрироваться</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Вход в аккаунт</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </header>
+    </nav>
+<!--    <header class = "navbar d-flex flex-column flex-md-row">-->
+<!--        <a href="index.html"><img class="logo" src="img/ffc5b3fb4f43d900f4113fe10cfa678a.jpg"></a>-->
+<!--        <div class = "nav d-flex flex-column flex-md-row">-->
+<!--            <a href="Premium.html">Premium</a>-->
+<!--            <a href="#">Справка</a>-->
+<!--            <a href="#">Скачать</a>-->
+<!--            <a href="#">Зарегистрироваться</a>-->
+<!--            <a href="#">Вход в аккаунт</a>-->
+<!--        </div>-->
+<!--    </header>-->
 <!--  Main start  -->
     <main class="main">
-        <div class="container contnr1">
-            <h1>Целый месяц Premium бесплатно</h1>
-            <h2>$4.99 в месяц после окончания пробного периода. Отменить подписку можно в любой момент.</h2>
-            <div class="pBtn">
-                <a href="signin"><button>НАЧАТЬ</button></a>
-                <a href="#"><button>ПОСМОТРЕТЬ ВАРИАНТЫ ПОДПИСКИ</button></a>
+        <div class="contnr1">
+            <div class="container-fluid col-8 pt-5">
+                <h1>Целый месяц Premium бесплатно</h1>
+                <h2>$4.99 в месяц после окончания пробного периода. Отменить подписку можно в любой момент.</h2>
+                <div class="pBtn row">
+                    <a class="mb-3" href="signin"><button type="button" class="btn btn-primary">НАЧАТЬ</button></a>
+                    <a href="#"><button type="button" class="btn btn-light">ПОСМОТРЕТЬ ВАРИАНТЫ ПОДПИСКИ</button></a>
+                </div>
+                <p>Действуют Условия использования. Бесплатная подписка на месяц доступна только для новых пользователей Premium.</p>
             </div>
-            <p>Действуют Условия использования. Бесплатная подписка на месяц доступна только для новых пользователей Premium.</p>
         </div>
-
-        <div class="container contnr2">
-            <div>
-                <h1>Что дает Premium-подписка</h1>
+        <div class="contnr2">
+            <div class="container col-md-8">
+                <div>
+                    <h1>Что дает Premium-подписка</h1>
+                </div>
+                <ul class="d-flex flex-column flex-md-row">
+                    <li>
+                        <div class="bgImg bgImg1"></div>
+                        <div class="bgImg">
+                            <h2>Скачивай треки.</h2>
+                            <p>Слушай музыку даже офлайн.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="bgImg bgImg2"></div>
+                        <div class="bgImg">
+                            <h2>Не отвлекайся на рекламу.</h2>
+                            <p>Больше никаких перерывов.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="bgImg bgImg3"></div>
+                        <div class="bgImg">
+                            <h2>Включай любую музыку.</h2>
+                            <p>И на мобильных устройствах тоже.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="bgImg bgImg4"></div>
+                        <div class="bgImg">
+                            <h2>Сколько угодно скипов.</h2>
+                            <p>Просто включи нужный трек.</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <ul>
-                <li>
-                    <div class="bgImg bgImg1"></div>
-                    <div>
-                        <h2>Скачивай треки.</h2>
-                        <p>Слушай музыку даже офлайн.</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="bgImg bgImg2"></div>
-                    <div>
-                        <h2>Не отвлекайся на рекламу.</h2>
-                        <p>Больше никаких перерывов.</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="bgImg bgImg3"></div>
-                    <div>
-                        <h2>Включай любую музыку.</h2>
-                        <p>И на мобильных устройствах тоже.</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="bgImg bgImg4"></div>
-                    <div>
-                        <h2>Сколько угодно скипов.</h2>
-                        <p>Просто включи нужный трек.</p>
-                    </div>
-                </li>
-            </ul>
         </div>
-
-        <div class="container contnr3">
-            <div>
-                <h1>Выберите свой Premium</h1>
-                <p>Слушай что угодно и когда захочешь — на телефоне, динамике и других устройствах.</p>
-            </div>
-            <div class="cards">
-                <div class="card">
-                    <h6>Месяц бесплатно</h6>
-                    <h2>Индивидуальная подписка</h2>
-                    <h5>$4.99 в месяц после пробного периода.</h5>
-                    <h5>1 аккаунт</h5>
-
-                    <h5>Музыка без рекламы</h5>
-                    <h5>Музыка без рекламы</h5>
-                    <h5>Музыка без рекламы</h5>
-
-                    <div class="cardBtn">
-                        <butt>Начать</butt>
-                    </div>
-
-                    <p>Действуют Условия использования. Бесплатная подписка на месяц доступна только для новых пользователей Premium.</p>
+        <div class="contnr3">
+            <div class="container col-md-8">
+                <div>
+                    <h1>Выберите свой Premium</h1>
+                    <p>Слушай что угодно и когда захочешь — на телефоне, динамике и других устройствах.</p>
                 </div>
-                <div class="card">
-                    <h6>Месяц бесплатно</h6>
-                    <h2>Индивидуальная подписка</h2>
-                    <h5>$4.99 в месяц после пробного периода.</h5>
-                    <h5>1 аккаунт</h5>
+                <div class="cards d-flex flex-column flex-md-row pb-5">
+                    <div class="card">
+                        <div class="container pt-3">
+                            <button type="button" class="btn btn-primary btn-sm" disabled>Месяц бесплатно</button>
+                        </div>
+                        <div class="container pt-3">
+                            <h2>Индивидуальная подписка</h2>
+                        </div>
+                        <div class="container">
+                            <h5>$4.99 в месяц после пробного периода.</h5>
+                            <h5>1 аккаунт</h5>
+                        </div>
 
-                    <h5>Музыка без рекламы</h5>
-                    <h5>Музыка без рекламы</h5>
-                    <h5>Музыка без рекламы</h5>
+                        <div class="container pt-5 pb-5">
+                            <h5>Музыка без рекламы</h5>
+                            <h5>Доступ к музыке в офлайн-режиме</h5>
+                            <h5>Выбор любого трека</h5>
+                        </div>
 
-                    <div class="cardBtn">
-                        <butt>Начать</butt>
+                        <div class="container pt-4 pb-5 d-flex justify-content-center">
+                            <div class="cardBtn">
+                                <button type="button" class="btn btn1 btn-dark btn-lg">Начать</button>
+                            </div>
+                        </div>
+
+                        <div class="container pt-5">
+                            <p>Действуют Условия использования. Бесплатная подписка на месяц доступна только для новых пользователей Premium.</p>
+                        </div>
                     </div>
+                    <div class="card">
+                        <div class="container pt-3">
+                            <button type="button" class="btn btn-primary btn-sm" disabled>Месяц бесплатно</button>
+                        </div>
+                        <div class="container pt-3">
+                            <h2>Premium для двоих</h2>
+                        </div>
+                        <div class="container">
+                            <h5>$4.99 в месяц после пробного периода.</h5>
+                            <h5>1 аккаунт</h5>
+                        </div>
 
-                    <p>Действуют Условия использования. Бесплатная подписка на месяц доступна только для новых пользователей Premium.</p>
-                </div>
-                <div class="card">
-                    <h6>Месяц бесплатно</h6>
-                    <h2>Индивидуальная подписка</h2>
-                    <h5>$4.99 в месяц после пробного периода.</h5>
-                    <h5>1 аккаунт</h5>
+                        <div class="container pt-5 pb-5">
+                            <h5>Музыка без рекламы</h5>
+                            <h5>Музыка без рекламы</h5>
+                            <h5>Музыка без рекламы</h5>
+                        </div>
 
-                    <h5>Музыка без рекламы</h5>
-                    <h5>Музыка без рекламы</h5>
-                    <h5>Музыка без рекламы</h5>
+                        <div class="container pt-5 pb-5 d-flex justify-content-center">
+                            <div class="cardBtn">
+                                <button type="button" class="btn btn-dark btn-lg">Начать</button>
+                            </div>
+                        </div>
 
-                    <div class="cardBtn">
-                        <butt>Начать</butt>
+                        <div class="container pt-5">
+                            <p>Действуют Условия использования. Бесплатная подписка на месяц доступна только для новых пользователей Premium.</p>
+                        </div>
                     </div>
+                    <div class="card">
+                        <div class="container pt-3">
+                            <button type="button" class="btn btn-primary btn-sm" disabled>Месяц бесплатно</button>
+                        </div>
+                        <div class="container pt-3">
+                            <h2>Premium для семьи</h2>
+                        </div>
+                        <div class="container">
+                            <h5>$4.99 в месяц после пробного периода.</h5>
+                            <h5>1 аккаунт</h5>
+                        </div>
 
-                    <p>Действуют Условия использования. Бесплатная подписка на месяц доступна только для новых пользователей Premium.</p>
-                </div>
-                <div class="card">
-                    <h6>Месяц бесплатно</h6>
-                    <h2>Индивидуальная подписка</h2>
-                    <h5>$4.99 в месяц после пробного периода.</h5>
-                    <h5>1 аккаунт</h5>
+                        <div class="container pt-5 pb-5">
+                            <h5>Музыка без рекламы</h5>
+                            <h5>Музыка без рекламы</h5>
+                            <h5>Музыка без рекламы</h5>
+                        </div>
 
-                    <h5>Музыка без рекламы</h5>
-                    <h5>Музыка без рекламы</h5>
-                    <h5>Музыка без рекламы</h5>
+                        <div class="container pt-5 pb-5 d-flex justify-content-center">
+                            <div class="cardBtn">
+                                <button type="button" class="btn btn-dark btn-lg">Начать</button>
+                            </div>
+                        </div>
 
-                    <div class="cardBtn">
-                        <butt>Начать</butt>
+                        <div class="container pt-5">
+                            <p>Действуют Условия использования. Бесплатная подписка на месяц доступна только для новых пользователей Premium.</p>
+                        </div>
                     </div>
+                    <div class="card">
+                        <div class="container pt-3">
+                            <button type="button" class="btn btn-primary btn-sm" disabled>Месяц бесплатно</button>
+                        </div>
+                        <div class="container pt-3">
+                            <h2>Premium для студентов</h2>
+                        </div>
+                        <div class="container">
+                            <h5>$4.99 в месяц после пробного периода.</h5>
+                            <h5>1 аккаунт</h5>
+                        </div>
 
-                    <p>Действуют Условия использования. Бесплатная подписка на месяц доступна только для новых пользователей Premium.</p>
+                        <div class="container pt-5 pb-5">
+                            <h5>Музыка без рекламы</h5>
+                            <h5>Музыка без рекламы</h5>
+                            <h5>Музыка без рекламы</h5>
+                        </div>
+
+                        <div class="container pt-5 pb-5 d-flex justify-content-center">
+                            <div class="cardBtn">
+                                <button type="button" class="btn btn-dark btn-lg">Начать</button>
+                            </div>
+                        </div>
+
+                        <div class="container pt-5">
+                            <p>Действуют Условия использования. Бесплатная подписка на месяц доступна только для новых пользователей Premium.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -175,5 +256,7 @@
         </div>
     </footer>
 <!--  Footer end  -->
+<script src="js/premium.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

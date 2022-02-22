@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/ayan%20loh.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -13,19 +14,19 @@
 </head>
 <body>
 <!-- Navbar -->
-    <header class = "navbar">
-        <img class="logo" src="img/ffc5b3fb4f43d900f4113fe10cfa678a.jpg">
-        <div class = "nav">
+    <header class = "navbar d-flex flex-column flex-md-row">
+        <a href="index.html"><img class="logo" src="img/ffc5b3fb4f43d900f4113fe10cfa678a.jpg"></a>
+        <div class = "nav d-flex flex-column flex-md-row">
             <a href="Premium.html">Premium</a>
-            <a href="https://support.spotify.com/ru-ru/">Справка</a>
-            <a href="https://www.spotify.com/ru-ru/download/windows/">Скачать</a>
-            <a href="https://www.spotify.com/ru-ru/signup">Зарегистрироваться</a>
-            <a href="https://accounts.spotify.com/en/login/?continue=https:%2F%2Fopen.spotify.com%2F__noul__%3Fl2l%3D1%26nd%3D1&_locale=ru-RU">Вход в аккаунт</a>
+            <a href="#">Справка</a>
+            <a href="#">Скачать</a>
+            <a href="#">Зарегистрироваться</a>
+            <a href="#">Вход в аккаунт</a>
         </div>
     </header>
 <!-- Body -->
     <main class = "main">
-        <div class="container bg1">
+        <div class="container-fluid bg1">
             <h1 class = "Bold">Услышать весь мир</h1>
             <h2>Миллионы треков и подкастов. Банковская карта не понадобится.</h2>
             <div class="downloadButton">
@@ -59,5 +60,7 @@
             </ul>
         </div>
     </footer>
+
+<script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
